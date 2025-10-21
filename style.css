@@ -119,3 +119,131 @@ nav > a {
     cursor: pointer;
     padding: 0;
 }
+
+.autorization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.autorization > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    gap: 10px;
+}
+
+.fake-input {
+    width: 30%;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.432);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+.submit_autorization {
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    height: 30px;
+    width: 120px;
+}
+
+.password_reset {
+    text-decoration: none;
+    color: black;
+}
+
+.about_section {
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    display: flex;
+    width: 90%;
+    padding: 50px 0;
+}
+
+.about > div  {
+    flex: 1;
+}
+.about > img {
+    flex: 1;
+    max-width: 600px;
+}
+
+.features-demo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-demo {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.features-demo > video {
+    width: 1360px;
+    height: 720px;
+}
+
+.new_books_section {
+    display: flex;
+    justify-content: center;
+}
+
+.books_scroller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.books_scroller > button {
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    height: 30px;
+    width: 120px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: wheat;
+    width: 100px;
+    height: 260px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    border-radius: 10px;
+}
+
+.book_name {
+    font-size: 12px;
+}
+
+.book_caption {
+    font-size: 12px;
+    display: none;
+}
+
+.book > img {
+    width: 90%;
+}
+.book > button {
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    height: 20px;
+    width: 90%;
+}
