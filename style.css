@@ -35,7 +35,7 @@ nav {
     gap: 30px;
 }
 
-nav > a {
+nav>a {
     text-decoration: none;
     color: black;
     cursor: pointer;
@@ -60,23 +60,24 @@ nav > a {
     background-color: aqua;
     position: relative;
 }
-.slide > img {
+
+.slide>img {
     height: 100%;
 }
 
-.slide > h2 {
+.slide>h2 {
     position: absolute;
     top: 40%;
     left: 2%;
 }
 
-.slide > h3 {
+.slide>h3 {
     position: absolute;
     top: 50%;
     left: 2%;
 }
 
-.slide > button {
+.slide>button {
     position: absolute;
     top: 60%;
     left: 2%;
@@ -96,7 +97,7 @@ nav > a {
     align-items: center;
 }
 
-.slideControl > button {
+.slideControl>button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +114,7 @@ nav > a {
     justify-content: space-evenly;
 }
 
-.anotherSlide > button {
+.anotherSlide>button {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -127,7 +128,7 @@ nav > a {
     padding: 50px 0;
 }
 
-.autorization > form {
+.autorization>form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,10 +168,11 @@ nav > a {
     padding: 50px 0;
 }
 
-.about > div  {
+.about>div {
     flex: 1;
 }
-.about > img {
+
+.about>img {
     flex: 1;
     max-width: 600px;
 }
@@ -189,7 +191,7 @@ nav > a {
     padding: 50px 0;
 }
 
-.features-demo > video {
+.features-demo>video {
     width: 1360px;
     height: 720px;
 }
@@ -207,7 +209,7 @@ nav > a {
     width: 50%;
 }
 
-.books_scroller > button {
+.books_scroller>button {
     background-color: rgba(255, 255, 255, 0.753);
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.247);
@@ -237,13 +239,99 @@ nav > a {
     display: none;
 }
 
-.book > img {
+.book>img {
     width: 90%;
 }
-.book > button {
+
+.book>button {
     background-color: rgba(255, 255, 255, 0.753);
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.247);
     height: 20px;
     width: 90%;
+}
+
+.search_section {
+    display: flex;
+    padding: 50px 0;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search_container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search_input {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    height: 30px;
+}
+
+.search_button {
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    height: 25px;
+    width: 75px;
+}
+
+
+.reviews_section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.review {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.review_left_side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.review_left_side > img {
+    width: 100px;
+    height: 100px;
+}
+
+.review_right_side {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news_subscribe_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.news_subscribe_cont {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #34a56f;
+    border-radius: 50px;
+    padding: 20px;
 }
