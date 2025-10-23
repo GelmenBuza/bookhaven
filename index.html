@@ -11,45 +11,43 @@
 <body>
     <header>
         <div class="headerCont">
-            <button class="infButton">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="currentColor"
-                        d="M4 21q-.425 0-.712-.288T3 20t.288-.712T4 19h16q.425 0 .713.288T21 20t-.288.713T20 21zm0-8q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-8q-.425 0-.712-.288T3 4t.288-.712T4 3h16q.425 0 .713.288T21 4t-.288.713T20 5z" />
-                </svg>
-            </button>
             <nav>
-                <a href="№">Регистрация</a>
-                <a href="№">Авторизация</a>
-                <a href="№">Личный кабинет</a>
-                <a href="№">О нас</a>
-                <a href="№">Новые книги</a>
-                <a href="№">Поиск</a>
-                <a href="№">Отзывы</a>
-                <a href="№">Контакты</a>
+                <a href="#">Регистрация</a>
+                <a href="#">Авторизация</a>
+                <a href="#">Личный кабинет</a>
+                <a href="#">О нас</a>
+                <a href="#">Новые книги</a>
+                <a href="#">Поиск</a>
+                <a href="#">Отзывы</a>
+                <a href="#">Контакты</a>
             </nav>
         </div>
     </header>
     <main>
         <section class="welcomingWords">
             <div class="slide">
-                <img src="" alt="slide image">
-                <h2>Читайте любимые книги онлайн</h2>
-                <h3>Загружайте свои книги или читайте книги, добавленные нами</h3>
-                <button>Начать чтение</button>
+                <img src="./assets/images/landingPage/slides/1.jpg" alt="slide image" id="slideImg">
+                <div>
+                    <h2>Читайте любимые книги онлайн</h2>
+                    <h3>Загружайте свои книги или читайте книги, добавленные нами</h3>
+                    <button>Начать чтение</button>
+                </div>
+
             </div>
             <div class="slideControl">
-                <button>
+                <button id="slideButtonLeft">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor"
                             d="m7.825 12l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T5.426 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7zm6.6 0l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T12.026 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7z" />
                     </svg>
                 </button>
                 <div class="anotherSlide">
-                    <button><img src="" alt="slide"></button>
-                    <button><img src="" alt="slide"></button>
-                    <button><img src="" alt="slide"></button>
+                    <button class="aciveSlide"><img src="./assets/images/landingPage/slides/1.jpg" alt="1"></button>
+                    <button><img src="./assets/images/landingPage/slides/2.jpg" alt="2"></button>
+                    <button><img src="./assets/images/landingPage/slides/3.jpg" alt="3"></button>
+                    <button><img src="./assets/images/landingPage/slides/4.jpg" alt="4"></button>
                 </div>
-                <button>
+                <button id="slideButtonRight">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor"
                             d="M9.575 12L5 7.4L6.4 6l6 6l-6 6L5 16.6zm6.6 0L11.6 7.4L13 6l6 6l-6 6l-1.4-1.4z" />
@@ -211,47 +209,19 @@
             </datalist>
         </section>
         <section class="reviews_section">
-            <div class="review">
-                <div class="review_left_side">
-                    <p>Мария Чирнявская</p>
-                    <img src="./assets/images/avatars/автор отзыва 1.jpg" alt="">
-                </div>
-                <div class="review_right_side">
-                    <div class="stars">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="#000"
-                                d="m7.325 18.923l1.24-5.313l-4.123-3.572l5.431-.47L12 4.557l2.127 5.01l5.43.47l-4.123 3.572l1.241 5.313L12 16.102z"
-                                stroke-width="0.5" stroke="#000" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="#000"
-                                d="m7.325 18.923l1.24-5.313l-4.123-3.572l5.431-.47L12 4.557l2.127 5.01l5.43.47l-4.123 3.572l1.241 5.313L12 16.102z"
-                                stroke-width="0.5" stroke="#000" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="#000"
-                                d="m7.325 18.923l1.24-5.313l-4.123-3.572l5.431-.47L12 4.557l2.127 5.01l5.43.47l-4.123 3.572l1.241 5.313L12 16.102z"
-                                stroke-width="0.5" stroke="#000" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="#000"
-                                d="m7.325 18.923l1.24-5.313l-4.123-3.572l5.431-.47L12 4.557l2.127 5.01l5.43.47l-4.123 3.572l1.241 5.313L12 16.102z"
-                                stroke-width="0.5" stroke="#000" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="#000"
-                                d="m7.325 18.923l1.24-5.313l-4.123-3.572l5.431-.47L12 4.557l2.127 5.01l5.43.47l-4.123 3.572l1.241 5.313L12 16.102z"
-                                stroke-width="0.5" stroke="#000" />
-                        </svg>
-                    </div>
-                    <p>
-                        Очень увлекательная история "Невеста сумеречной Тени" с элементами магии и дворцовых интриг.
-                        Главная героиня сильная и харизматичная, а сюжет держит в напряжении до последней страницы.
-                        Любителям фантастики и романтики — обязательно к прочтению!
-                    </p>
-                    <span>15.10.2024</span>
-                </div>
-            </div>
+            <button id="review_left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="m7.825 12l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T5.426 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7zm6.6 0l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T12.026 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7z" />
+                </svg>
+            </button>
+            <div class="reviews_cont"></div>
+            <button id="review_right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M9.575 12L5 7.4L6.4 6l6 6l-6 6L5 16.6zm6.6 0L11.6 7.4L13 6l6 6l-6 6l-1.4-1.4z" />
+                </svg>
+            </button>
         </section>
         <section class="news_subscribe_section">
             <div class="news_subscribe_cont">
@@ -266,6 +236,31 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer_cont">
+            <div class="footer_links">
+                <a href="#">+7 (800) 123-45-67</a>
+                <a href="#">books@prof.ru</a>
+            </div>
+            <div class="footer_nav">
+                <div class="footer_row">
+                    <a href="#">Главная</a>
+                    <a href="#">Регистрация</a>
+                    <a href="#">Каталог</a>
+                </div>
+                <div class="footer_row">
+                    <a href="#">Читать книгу</a>
+                    <a href="#">Читать книгу — темная тема</a>
+                    <a href="#">Личный кабинет</a>
+                </div>
+                <div class="footer_row">
+                    <a href="#">Личный кабинет администратора</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
 </body>
 
 </html>
