@@ -69,7 +69,7 @@ nav>a {
 }
 
 
-.slide > div {
+.slide>div {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@ nav>a {
     border-radius: 20px;
 }
 
-.anotherSlide>button > img {
+.anotherSlide>button>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -313,9 +313,10 @@ nav>a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow: hidden;
 }
 
-.reviews_section > button {
+.reviews_section>button {
     background-color: rgba(255, 255, 255, 0.753);
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.247);
@@ -327,9 +328,37 @@ nav>a {
 }
 
 .review {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    transition: transform 0.2s ease;
+    transform: translateX(0);
+}
+
+.rightSide {
+    transition: transform 0.2s ease;
+    transform: translateX(100%);
+}
+
+.leftSide {
+    transition: transform 0.2s ease;
+    transform: translateX(-100%);
+}
+
+.leftSide.normalize {
+    transform: translateX(0) !important;
+}
+
+.rgihtSide.normalize {
+    transform: translateX(0) !important;
+}
+
+.review.movedLeft {
+    transform: translateX(-100%);
+}
+
+.review.review.movedRight {
+    transform: translateX(100%);
 }
 
 .review_left_side {
@@ -341,7 +370,7 @@ nav>a {
     gap: 20px;
 }
 
-.review_left_side > img {
+.review_left_side>img {
     width: 100px;
     height: 100px;
 }

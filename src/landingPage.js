@@ -47,10 +47,10 @@ function generateStars(count) {
     return result.join('\n')
 }
 
-function generateReview(resviewsText, i) {
+function generateReview(resviewsText, i, side) {
     const resviewsDiv = document.querySelector('.reviews_cont');
     resviewsDiv.innerHTML = `
-                <div class="review">
+                <div class="review ${side}">
                 <div class="review_left_side">
                     <p>${resviewsText.at(i).authorName}</p>
                     <img src="./assets/images/avatars/автор отзыва ${Math.abs(i) + 1}.jpg" alt="">
@@ -132,21 +132,47 @@ function makeReviews() {
         },
     ]
     let number = 0;
-    generateReview(resviewsText, number);
+    generateReview(resviewsText, number, '');
     document.getElementById('review_left').addEventListener('click', () => {
         number -= 1;
-        if (Math.abs(number) > resviewsText.length) {
+        if (Math.abs(number) >= resviewsText.length) {
             number = 0
         }
-        generateReview(resviewsText, number);
+        document.querySelector('.review').classList.add('movedRight')
+
+        setTimeout(() => {
+            document.querySelector('.review').classList.remove('movedRight')
+            generateReview(resviewsText, number, 'leftSide');
+        }, 200);
+
+        document.querySelector('.review').classList.add('normalize')
+
+        setTimeout(() => {
+            document.querySelector('.review').classList.remove('leftSide')
+            document.querySelector('.review').classList.remove('normalize')
+        }, 400)
     })
 
     document.getElementById('review_right').addEventListener('click', () => {
         number += 1;
-        if (Math.abs(number) > resviewsText.length) {
+        if (Math.abs(number) >= resviewsText.length) {
             number = 0
         }
-        generateReview(resviewsText, number);
+        document.querySelector('.review').classList.add('movedLeft')
+
+        setTimeout(() => {
+            document.querySelector('.review').classList.remove('movedLeft')
+            generateReview(resviewsText, number, 'rightSide');
+        }, 200);
+
+        document.querySelector('.review').classList.add('normalize')
+
+        setTimeout(() => {
+            document.querySelector('.review').classList.remove('rightSide')
+            document.querySelector('.review').classList.remove('normalize')
+
+        }, 400)
+
     })
 
 }
