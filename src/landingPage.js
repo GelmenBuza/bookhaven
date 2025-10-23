@@ -143,14 +143,14 @@ function makeReviews() {
         setTimeout(() => {
             document.querySelector('.review').classList.remove('movedRight')
             generateReview(resviewsText, number, 'leftSide');
-        }, 200);
+        }, 100);
 
         document.querySelector('.review').classList.add('normalize')
 
         setTimeout(() => {
             document.querySelector('.review').classList.remove('leftSide')
             document.querySelector('.review').classList.remove('normalize')
-        }, 400)
+        }, 200)
     })
 
     document.getElementById('review_right').addEventListener('click', () => {
@@ -163,7 +163,7 @@ function makeReviews() {
         setTimeout(() => {
             document.querySelector('.review').classList.remove('movedLeft')
             generateReview(resviewsText, number, 'rightSide');
-        }, 200);
+        }, 100);
 
         document.querySelector('.review').classList.add('normalize')
 
@@ -171,7 +171,7 @@ function makeReviews() {
             document.querySelector('.review').classList.remove('rightSide')
             document.querySelector('.review').classList.remove('normalize')
 
-        }, 400)
+        }, 200)
 
     })
 
