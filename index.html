@@ -195,9 +195,11 @@
             </div>
         </section>
         <section class="search_section">
+                                <p>Поиск книги по названию или автору:</p>
             <div class="search_container">
-                <input type="text" id="book_search" class="search_input" list="book_suggestions"
-                    placeholder="Название или автор..." />
+                    <input type="text" id="book_search" class="search_input" list="book_suggestions"
+                        placeholder="Название или автор..." />
+
                 <button class="search_button">Поиск</button>
             </div>
 
@@ -220,7 +222,7 @@
             <div class="reviews_cont"></div>
             <button id="review_right">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="currentColor"
+                    <path fill="currentColor"s
                         d="M9.575 12L5 7.4L6.4 6l6 6l-6 6L5 16.6zm6.6 0L11.6 7.4L13 6l6 6l-6 6l-1.4-1.4z" />
                 </svg>
             </button>
@@ -228,10 +230,12 @@
         <section class="news_subscribe_section">
             <div class="news_subscribe_cont">
                 <p>Подписка на новости</p>
-                <form action="">
-                    E-mail: <input type="email" name="user_email" />
+                <form action="" class="subscride_form">
                     <div>
-                        <input type="checkbox" name="confirm" /> Я согласен на бработку персональных данных
+                        E-mail: <input type="email" name="user_email" />
+                    </div>
+                    <div class="perconal_data">
+                        <input type="checkbox" name="confirm" />Я согласен на бработку персональных данных
                     </div>
                 </form>
                 <button>Подписаться</button>
