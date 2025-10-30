@@ -1,5 +1,10 @@
 @import url(./styles/landingPage.css);
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 button {
     cursor: pointer !important;
     transition: 0.2s ease;
@@ -9,13 +14,14 @@ button:hover {
     box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.1);
 }
 
-a {
+.link {
     color: #000;
     text-decoration: none;
     transition: 0.2s ease;
+    cursor: pointer;
 }
 
-a:hover {
+.link:hover {
     color: #28724f;
 }
 

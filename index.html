@@ -9,23 +9,23 @@
 </head>
 
 <body>
-    <header>
-        <div class="headerCont">
-            <nav>
-                <a href="#">Регистрация</a>
-                <a href="#">Авторизация</a>
-                <a href="#">Личный кабинет</a>
-                <a href="#">О нас</a>
-                <a href="#">Новые книги</a>
-                <a href="#">Поиск</a>
-                <a href="#">Отзывы</a>
-                <a href="#">Контакты</a>
+    <header class="header">
+        <div class="header__div">
+            <nav class="header__div__nav">
+                <a href="#" class="link">Регистрация</a>
+                <a href="#" class="link">Авторизация</a>
+                <a href="#" class="link">Личный кабинет</a>
+                <a href="#" class="link">О нас</a>
+                <a href="#" class="link">Новые книги</a>
+                <a href="#" class="link">Поиск</a>
+                <a href="#" class="link">Отзывы</a>
+                <a href="#" class="link">Контакты</a>
             </nav>
         </div>
     </header>
     <main>
-        <section class="welcomingWords">
-            <div class="slide">
+        <section class="welcome--section">
+            <div class="welcome--section__slider">
                 <img src="./assets/images/landingPage/slides/1.jpg" alt="slide image" id="slideImg">
                 <div>
                     <h2>Читайте любимые книги онлайн</h2>
@@ -34,7 +34,7 @@
                 </div>
 
             </div>
-            <div class="slideControl">
+            <div class="welcome--section__slider--control">
                 <button id="slideButtonLeft">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor"
@@ -56,7 +56,7 @@
             </div>
         </section>
 
-        <section class="autorization">
+        <section class="autorization--section">
 
             <p>Авторизация</p>
 
@@ -76,8 +76,8 @@
             </form>
 
         </section>
-        <section class="about_section">
-            <div class="about">
+        <section class="about--section">
+            <div class="about--section__div">
                 <div>
                     <p>BookHaven — это уникальная платформа для бесплатного чтения книг, где каждый найдет что-то по
                         душе.
@@ -109,8 +109,8 @@
                 <img src="./assets/images/landingPage/aboutUs.png" alt="">
             </div>
         </section>
-        <section class="features-demo-section">
-            <div class="features-demo">
+        <section class="featuresDemo--section">
+            <div class="featuresDemo--section__div">
                 <p>Посмотрите, как создаются наши любимые книги:</p>
                 <video controls>
                     <source src="./assets/video/howto.mp4" type="video/mp4">
@@ -119,8 +119,8 @@
             </div>
         </section>
 
-        <section class="new_books_section">
-            <div class="books_scroller">
+        <section class="newBooks--section">
+            <div class="newBooks--section__div">
                 <div class="book">
                     <img src="./assets/images/books/Антиштраф 2018.jpg" alt="">
                     <p class="book_name">Антиштраф 2018</p>
@@ -194,11 +194,11 @@
                 </div>
             </div>
         </section>
-        <section class="search_section">
-                                <p>Поиск книги по названию или автору:</p>
-            <div class="search_container">
-                    <input type="text" id="book_search" class="search_input" list="book_suggestions"
-                        placeholder="Название или автор..." />
+        <section class="search--section">
+            <p>Поиск книги по названию или автору:</p>
+            <div class="search--section__div">
+                <input type="text" id="book_search" class="search_input" list="book_suggestions"
+                    placeholder="Название или автор..." />
 
                 <button class="search_button">Поиск</button>
             </div>
@@ -212,7 +212,7 @@
                 <option value="Михаил Булгаков">
             </datalist>
         </section>
-        <section class="reviews_section">
+        <section class="reviews--section">
             <button id="review_left">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path fill="currentColor"
@@ -222,13 +222,13 @@
             <div class="reviews_cont"></div>
             <button id="review_right">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="currentColor"s
+                    <path fill="currentColor" s
                         d="M9.575 12L5 7.4L6.4 6l6 6l-6 6L5 16.6zm6.6 0L11.6 7.4L13 6l6 6l-6 6l-1.4-1.4z" />
                 </svg>
             </button>
         </section>
-        <section class="news_subscribe_section">
-            <div class="news_subscribe_cont">
+        <section class="newsSubscribe--section">
+            <div class="newsSubscribe--section__div">
                 <p>Подписка на новости</p>
                 <form action="" class="subscride_form">
                     <div>
@@ -242,27 +242,26 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer_cont">
-            <div class="footer_links">
-                <a href="#">+7 (800) 123-45-67</a>
-                <a href="#">books@prof.ru</a>
+    <footer class="footer">
+        <div class="footer__div">
+            <div class="footer__div__nav">
+                <a href="#" class="link">+7 (800) 123-45-67</a>
+                <a href="#" class="link">books@prof.ru</a>
             </div>
-            <div class="footer_nav">
-                <div class="footer_row">
-                    <a href="#">Главная</a>
-                    <a href="#">Регистрация</a>
-                    <a href="#">Каталог</a>
+            <div class="footer__div__nav">
+                <div class="footer__div__nav__row">
+                    <a href="#" class="link">Главная</a>
+                    <a href="#" class="link">Регистрация</a>
+                    <a href="#" class="link">Каталог</a>
                 </div>
-                <div class="footer_row">
-                    <a href="#">Читать книгу</a>
-                    <a href="#">Читать книгу — темная тема</a>
-                    <a href="#">Личный кабинет</a>
+                <div class="footer__div__nav__row">
+                    <a href="#" class="link">Читать книгу</a>
+                    <a href="#" class="link">Читать книгу — темная тема</a>
+                    <a href="#" class="link">Личный кабинет</a>
                 </div>
-                <div class="footer_row">
-                    <a href="#">Личный кабинет администратора</a>
+                <div class="footer__div__nav__row">
+                    <a href="#" class="link">Личный кабинет администратора</a>
                 </div>
-
             </div>
         </div>
     </footer>

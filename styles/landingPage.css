@@ -1,23 +1,21 @@
 body {
-    box-sizing: border-box;
-    margin: 0;
     background-color: #e7e6e6;
 }
 
 
 /* header */
 
-header {
+.header {
     display: flex;
     justify-content: center;
 }
 
-.headerCont {
+.header__div {
     position: relative;
     width: 90%;
 }
 
-nav {
+.header__div__nav {
     background-color: #bde4d1;
     display: flex;
     flex-direction: row;
@@ -27,25 +25,17 @@ nav {
     gap: 20px;
 }
 
-nav>a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-
 /* main */
 
 /* section welcomingWords */
 
-.welcomingWords {
+.welcome--section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.slide {
+.welcome--section__slider {
     height: 720px;
     width: 1360px;
     display: flex;
@@ -56,7 +46,7 @@ nav>a {
     border-radius: 50px;
 }
 
-.slide>img {
+.welcome--section__slider>img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -64,12 +54,12 @@ nav>a {
     transition: opacity 0.25s ease;
 }
 
-.slide>img.faded {
+.welcome--section__slider>img.faded {
     opacity: 0;
 }
 
 
-.slide>div {
+.welcome--section__slider>div {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -81,12 +71,12 @@ nav>a {
     background-color: #34a56f;
 }
 
-.slide button {
+.welcome--section__slider button {
     height: 30px;
     width: 120px;
 }
 
-.slideControl {
+.welcome--section__slider--control {
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -95,7 +85,7 @@ nav>a {
     align-items: center;
 }
 
-.slideControl>button {
+.welcome--section__slider--control>button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,13 +125,13 @@ nav>a {
     border: 1px solid red !important;
 }
 
-.autorization {
+.autorization--section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.autorization>form {
+.autorization--section>form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,61 +157,56 @@ nav>a {
     color: black;
 }
 
-.about_section {
+.about--section {
     display: flex;
     justify-content: center;
 }
 
-.about {
+.about--section__div {
     display: flex;
     width: 90%;
 }
 
-.about>div {
+.about--section__div>div {
     flex: 1;
 }
 
-.about>img {
+.about--section__div>img {
     flex: 1;
     max-width: 600px;
 }
 
-.features-demo-section {
+.featuresDemo--section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.features-demo {
+.featuresDemo--section__div {
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.features-demo>video {
+.featuresDemo--section__div>video {
     width: 800px;
     height: 600px;
 }
 
-.new_books_section {
+.newBooks--section {
     display: flex;
     justify-content: center;
 }
 
-.books_scroller {
+.newBooks--section__div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 50%;
+    width: 800px;
     flex-wrap: wrap;
-}
-
-.watch_all>button {
-    height: 30px;
-    width: 120px;
 }
 
 .book {
@@ -246,6 +231,11 @@ nav>a {
     justify-content: center;
 }
 
+.watch_all>button {
+    height: 30px;
+    width: 120px;
+}
+
 .book_name {
     font-size: 12px;
 }
@@ -266,14 +256,14 @@ nav>a {
     width: 90%;
 }
 
-.search_section {
+.search--section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.search_container {
+.search--section__div {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -292,7 +282,7 @@ nav>a {
 }
 
 
-.reviews_section {
+.reviews--section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,13 +363,13 @@ nav>a {
     gap: 20px;
 }
 
-.news_subscribe_section {
+.newsSubscribe--section {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.news_subscribe_cont {
+.newsSubscribe--section__div {
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -402,7 +392,7 @@ nav>a {
     align-items: center;
 }
 
-footer {
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -410,7 +400,7 @@ footer {
     background-color: #bde4d1;
 }
 
-.footer_cont {
+.footer__div {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -418,13 +408,7 @@ footer {
     padding: 0 50px
 }
 
-.footer_links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.footer_nav {
+.footer__div__nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
