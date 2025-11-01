@@ -1,7 +1,7 @@
 
 const mainSlide = document.getElementById('slideImg')
 const slideButtons = [document.getElementById('slideButtonLeft'), document.getElementById('slideButtonRight')]
-const slides = document.querySelector('.anotherSlide')
+const slides = document.querySelector('.welcome-section__anotherSlide')
 let activeSlide = document.querySelector('.aciveSlide')
 
 

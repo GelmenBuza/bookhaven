@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="header__div">
-            <nav class="header__div__nav">
+            <nav class="header__nav">
                 <a href="#" class="link">Регистрация</a>
                 <a href="#" class="link">Авторизация</a>
                 <a href="#" class="link">Личный кабинет</a>
@@ -24,30 +24,30 @@
         </div>
     </header>
     <main>
-        <section class="welcome--section">
-            <div class="welcome--section__slider">
+        <section class="welcome-section">
+            <div class="welcome-section__slider">
                 <img src="./assets/images/landingPage/slides/1.jpg" alt="slide image" id="slideImg">
                 <div>
                     <h2>Читайте любимые книги онлайн</h2>
                     <h3>Загружайте свои книги или читайте книги, добавленные нами</h3>
-                    <button>Начать чтение</button>
+                    <button class="button--med">Начать чтение</button>
                 </div>
 
             </div>
-            <div class="welcome--section__slider--control">
-                <button id="slideButtonLeft">
+            <div class="welcome-section__slider-control">
+                <button class="button--small" id="slideButtonLeft">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor"
                             d="m7.825 12l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T5.426 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7zm6.6 0l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T12.026 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7z" />
                     </svg>
                 </button>
-                <div class="anotherSlide">
+                <div class="welcome-section__anotherSlide">
                     <button class="aciveSlide"><img src="./assets/images/landingPage/slides/1.jpg" alt="1"></button>
                     <button><img src="./assets/images/landingPage/slides/2.jpg" alt="2"></button>
                     <button><img src="./assets/images/landingPage/slides/3.jpg" alt="3"></button>
                     <button><img src="./assets/images/landingPage/slides/4.jpg" alt="4"></button>
                 </div>
-                <button id="slideButtonRight">
+                <button class="button--small" id="slideButtonRight">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor"
                             d="M9.575 12L5 7.4L6.4 6l6 6l-6 6L5 16.6zm6.6 0L11.6 7.4L13 6l6 6l-6 6l-1.4-1.4z" />
@@ -56,28 +56,25 @@
             </div>
         </section>
 
-        <section class="autorization--section">
+        <section class="autorization-section">
 
-            <p>Авторизация</p>
+            <h2>Авторизация</h2>
 
-            <form class="" id="autorization_form" action="" method="get">
+            <form id="autorization_form" action="#" method="get">
 
-                <div class="fake-input" id="fake-input-desc" contenteditable="true"
-                    data-placeholder="Write your email..."></div> <!-- email -->
-                <input type="hidden" name="email" id="email" required>
+                <input class="input--med" type="email" name="email" id="email" placeholder="Введите вашу почту...">
 
-                <div class="fake-input text-reg-14" id="fake-input-url" contenteditable="true"
-                    data-placeholder="Write your password..."></div> <!-- password -->
-                <input type="hidden" name="password" id="password" required>
+                <input class="input--med" type="password" name="password" id="password" placeholder="Введите ваш пароль...">
 
-                <button type="submit" class="btn-reset submit_autorization">Submit</button>
+                <button type="submit" class="button--med">Submit</button>
 
-                <a href="#" class="password_reset">Сброс пароля</a>
+                <a href="#" class="link">Сброс пароля</a>
             </form>
 
         </section>
-        <section class="about--section">
-            <div class="about--section__div">
+        <section class="about-section">
+            <div class="about-section__div">
+                <h2>Book Haven</h2>
                 <div>
                     <p>BookHaven — это уникальная платформа для бесплатного чтения книг, где каждый найдет что-то по
                         душе.
@@ -109,9 +106,10 @@
                 <img src="./assets/images/landingPage/aboutUs.png" alt="">
             </div>
         </section>
-        <section class="featuresDemo--section">
-            <div class="featuresDemo--section__div">
-                <p>Посмотрите, как создаются наши любимые книги:</p>
+
+        <section class="featuresDemo-section">
+            <div class="featuresDemo-section__div">
+                <h2>Посмотрите, как создаются наши любимые книги:</h2>
                 <video controls>
                     <source src="./assets/video/howto.mp4" type="video/mp4">
                     Ваш браузер не поддерживает воспроизведение видео.
@@ -119,8 +117,9 @@
             </div>
         </section>
 
-        <section class="newBooks--section">
-            <div class="newBooks--section__div">
+        <section class="newBooks-section">
+            <h2>Новые книжки</h2>
+            <div class="newBooks-section__div">
                 <div class="book">
                     <img src="./assets/images/books/Антиштраф 2018.jpg" alt="">
                     <p class="book_name">Антиштраф 2018</p>
@@ -132,7 +131,7 @@
                         как себя вести в разных ситуациях. Материал четко разделен по категориям, так что вам совсем
                         не обязательно изучать книгу заранее. Положите ее в бардачок и воспользуйтесь при
                         возникновении проблем.</p>
-                    <button>Читать</button>
+                    <button class="button--med">Читать</button>
                 </div>
                 <div class="book">
                     <img src="./assets/images/books/Всё об ИИ чат-боте ChatGPT.jpg" alt="">
@@ -145,7 +144,7 @@
                         ChatGPT, а также даются советы по оптимальному использованию этого инструмента. "Всё об ИИ
                         чат-боте ChatGPT" является необходимой книгой для тех, кто хочет использовать современные
                         технологии для достижения своих целей в бизнесе и повседневной жизни.</p>
-                    <button>Читать</button>
+                    <button class="button--med">Читать</button>
                 </div>
                 <div class="book">
                     <img src="/assets/images/books/Игра на чужом поле.jpg" alt="">
@@ -156,7 +155,7 @@
                         неожиданные «шахи» на новой должности в крайкоме и международный боксерский турнир в
                         Норвегии. Штыбе нужно просчитывать ходы на несколько шагов вперед, где каждый промах может
                         стать матом, а каждый удачный ход — новой победой.</p>
-                    <button>Читать</button>
+                    <button class="button--med">Читать</button>
                 </div>
                 <div class="book">
                     <img src="./assets/images/books/Готовим по-русски. Рецепты, традиции, наследие.jpg" alt="">
@@ -169,7 +168,7 @@
                         интересные монастырские рецепты, основанные на современных русских кулинарных тенденциях, и
                         традиционные рецепты, посвященные Пасхе и Рождеству Христову. Наконец собственные рецепты
                         автора, основанные на опыте работы в ресторанах, в которых устроены русские печи.</p>
-                    <button>Читать</button>
+                    <button class="button--med">Читать</button>
                 </div>
                 <div class="book">
                     <img src="./assets/images/books/Занудная педиатрия для мам, пап, бабушек и дедушек_Разное про незаразное.jpg"
@@ -187,79 +186,80 @@
                         этой книги вы не станете врачом, однако она может позволить вам более осознанно относиться к
                         здоровью своих детей, снизить уровень тревожности и иметь представление, почему врачи дают
                         вам те или иные рекомендации и чего ожидать в дальнейшем.</p>
-                    <button>Читать</button>
+                    <button class="button--med">Читать</button>
                 </div>
                 <div class="watch_all">
-                    <button>Смотреть все</button>
+                    <button class="button--med">Смотреть все</button>
                 </div>
             </div>
         </section>
-        <section class="search--section">
-            <p>Поиск книги по названию или автору:</p>
-            <div class="search--section__div">
-                <input type="text" id="book_search" class="search_input" list="book_suggestions"
-                    placeholder="Название или автор..." />
+        <section class="search-section">
+            <h2>Поиск книги по названию или автору:</h2>
+            <div class="search-section__div">
+                <input type="text" id="book_search" class="input--big" list="book_suggestions"
+                    placeholder="Название или автор...">
 
-                <button class="search_button">Поиск</button>
+                <button class="button--med">Поиск</button>
+                <datalist id="book-suggestions">
+                    <option value="Война и мир">
+                    <option value="Лев Толстой">
+                    <option value="Преступление и наказание">
+                    <option value="Фёдор Достоевский">
+                    <option value="Мастер и Маргарита">
+                    <option value="Михаил Булгаков">
+                </datalist>
             </div>
 
-            <datalist id="book-suggestions">
-                <option value="Война и мир">
-                <option value="Лев Толстой">
-                <option value="Преступление и наказание">
-                <option value="Фёдор Достоевский">
-                <option value="Мастер и Маргарита">
-                <option value="Михаил Булгаков">
-            </datalist>
+
         </section>
-        <section class="reviews--section">
-            <button id="review_left">
+        <section class="reviews-section">
+            <button class="button--small" id="review_left">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path fill="currentColor"
                         d="m7.825 12l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T5.426 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7zm6.6 0l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T12.026 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7z" />
                 </svg>
             </button>
             <div class="reviews_cont"></div>
-            <button id="review_right">
+            <button class="button--small" id="review_right">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="currentColor" s
+                    <path fill="currentColor"
                         d="M9.575 12L5 7.4L6.4 6l6 6l-6 6L5 16.6zm6.6 0L11.6 7.4L13 6l6 6l-6 6l-1.4-1.4z" />
                 </svg>
             </button>
         </section>
-        <section class="newsSubscribe--section">
-            <div class="newsSubscribe--section__div">
+        <section class="newsSubscribe-section">
+            <div class="newsSubscribe-section__div">
                 <p>Подписка на новости</p>
-                <form action="" class="subscride_form">
+                <form action="#" class="subscride_form">
                     <div>
-                        E-mail: <input type="email" name="user_email" />
+                        E-mail: <input class="input--small" type="email" name="email" id="email" placeholder="Введите вашу почту...">
                     </div>
-                    <div class="perconal_data">
-                        <input type="checkbox" name="confirm" />Я согласен на бработку персональных данных
+                    <div>
+                        <input type="checkbox" name="confirm"><span>Я согласен на бработку персональных данных</span>
                     </div>
                 </form>
-                <button>Подписаться</button>
+                <button class="button--med">Подписаться</button>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__div">
-            <div class="footer__div__nav">
+            <div class="footer__nav">
                 <a href="#" class="link">+7 (800) 123-45-67</a>
                 <a href="#" class="link">books@prof.ru</a>
             </div>
-            <div class="footer__div__nav">
-                <div class="footer__div__nav__row">
+            <div class="footer__nav">
+                <div class="footer__nav-row">
                     <a href="#" class="link">Главная</a>
                     <a href="#" class="link">Регистрация</a>
                     <a href="#" class="link">Каталог</a>
                 </div>
-                <div class="footer__div__nav__row">
+                <div class="footer__nav-row">
                     <a href="#" class="link">Читать книгу</a>
                     <a href="#" class="link">Читать книгу — темная тема</a>
                     <a href="#" class="link">Личный кабинет</a>
                 </div>
-                <div class="footer__div__nav__row">
+                <div class="footer__nav-row">
                     <a href="#" class="link">Личный кабинет администратора</a>
                 </div>
             </div>

@@ -2,7 +2,6 @@ body {
     background-color: #e7e6e6;
 }
 
-
 /* header */
 
 .header {
@@ -15,7 +14,7 @@ body {
     width: 90%;
 }
 
-.header__div__nav {
+.header__nav {
     background-color: #bde4d1;
     display: flex;
     flex-direction: row;
@@ -29,13 +28,13 @@ body {
 
 /* section welcomingWords */
 
-.welcome--section {
+.welcome-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.welcome--section__slider {
+.welcome-section__slider {
     height: 720px;
     width: 1360px;
     display: flex;
@@ -46,7 +45,7 @@ body {
     border-radius: 50px;
 }
 
-.welcome--section__slider>img {
+.welcome-section__slider>img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -54,12 +53,12 @@ body {
     transition: opacity 0.25s ease;
 }
 
-.welcome--section__slider>img.faded {
+.welcome-section__slider>img.faded {
     opacity: 0;
 }
 
 
-.welcome--section__slider>div {
+.welcome-section__slider>div {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -71,12 +70,7 @@ body {
     background-color: #34a56f;
 }
 
-.welcome--section__slider button {
-    height: 30px;
-    width: 120px;
-}
-
-.welcome--section__slider--control {
+.welcome-section__slider-control {
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -85,17 +79,7 @@ body {
     align-items: center;
 }
 
-.welcome--section__slider--control>button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    border: none;
-}
-
-.anotherSlide {
+.welcome-section__anotherSlide {
     display: flex;
     width: 50%;
     flex-direction: row;
@@ -103,19 +87,14 @@ body {
     gap: 50px;
 }
 
-.anotherSlide>button {
+.welcome-section__anotherSlide>button {
     background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
     width: 300px;
     height: 90px;
     overflow: hidden;
-    border: 1px solid black;
-    border-radius: 20px;
 }
 
-.anotherSlide>button>img {
+.welcome-section__anotherSlide>button>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -125,13 +104,13 @@ body {
     border: 1px solid red !important;
 }
 
-.autorization--section {
+.autorization-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.autorization--section>form {
+.autorization-section>form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,67 +118,55 @@ body {
     gap: 10px;
 }
 
-.fake-input {
-    width: 30%;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.432);
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    padding: 5px;
-}
+/* section about */
 
-.submit_autorization {
-    height: 30px;
-    width: 120px;
-}
-
-.password_reset {
-    text-decoration: none;
-    color: black;
-}
-
-.about--section {
+.about-section {
     display: flex;
     justify-content: center;
 }
 
-.about--section__div {
+.about-section__div {
     display: flex;
     width: 90%;
 }
 
-.about--section__div>div {
+.about-section__div>div {
     flex: 1;
 }
 
-.about--section__div>img {
+.about-section__div>img {
     flex: 1;
     max-width: 600px;
 }
 
-.featuresDemo--section {
+/* section featuresDemo */
+
+.featuresDemo-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.featuresDemo--section__div {
+.featuresDemo-section__div {
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.featuresDemo--section__div>video {
+.featuresDemo-section__div>video {
     width: 800px;
     height: 600px;
 }
 
-.newBooks--section {
+/* section newBooks */
+
+.newBooks-section {
     display: flex;
     justify-content: center;
 }
 
-.newBooks--section__div {
+.newBooks-section__div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -231,11 +198,6 @@ body {
     justify-content: center;
 }
 
-.watch_all>button {
-    height: 30px;
-    width: 120px;
-}
-
 .book_name {
     font-size: 12px;
 }
@@ -251,19 +213,16 @@ body {
     width: 90%;
 }
 
-.book>button {
-    height: 20px;
-    width: 90%;
-}
+/* section search book */
 
-.search--section {
+.search-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.search--section__div {
+.search-section__div {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -271,18 +230,9 @@ body {
     align-items: center;
 }
 
-.search_input {
-    width: 80%;
-    height: 30px;
-}
+/* section review */
 
-.search_button {
-    height: 25px;
-    width: 75px;
-}
-
-
-.reviews--section {
+.reviews-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,7 +248,7 @@ body {
     overflow: hidden;
 }
 
-.reviews_section>button {
+.reviews-section>button {
     height: 30px;
     width: 30px;
     display: flex;
@@ -363,14 +313,16 @@ body {
     gap: 20px;
 }
 
-.newsSubscribe--section {
+/* section newsSubscribe */
+
+.newsSubscribe-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.newsSubscribe--section__div {
-    width: 20%;
+.newsSubscribe-section__div {
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -381,16 +333,19 @@ body {
     padding: 20px;
 }
 
-.news_subscribe_cont > button {
-    width: 200px;
-    height: 20px;
-}
-
 .subscride_form {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        width: 250px;
+    }
 }
+
+/* footer */
 
 .footer {
     display: flex;
@@ -408,13 +363,13 @@ body {
     padding: 0 50px
 }
 
-.footer__div__nav {
+.footer__nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.footer_row {
+.footer__nav-row {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
