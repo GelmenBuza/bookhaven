@@ -11,14 +11,14 @@
 <body>
     <header class="header display-flex justify-center">
         <nav class="header__nav display-flex justify-around flex-row">
-            <a href="#" class="header__link">Регистрация</a>
-            <a href="#" class="header__link">Авторизация</a>
-            <a href="#" class="header__link">Личный кабинет</a>
-            <a href="#" class="header__link">О нас</a>
-            <a href="#" class="header__link">Новые книги</a>
-            <a href="#" class="header__link">Поиск</a>
-            <a href="#" class="header__link">Отзывы</a>
-            <a href="#" class="header__link">Контакты</a>
+            <a href="./registration.html" class="header__link">Регистрация</a>
+            <a href="./index.html#authorization" class="header__link">Авторизация</a>
+            <a href="./profile.html" class="header__link">Личный кабинет</a>
+            <a href="./index.html#about" class="header__link">О нас</a>
+            <a href="./index.html#newbook" class="header__link">Новые книги</a>
+            <a href="./index.html#search" class="header__link">Поиск</a>
+            <a href="./index.html#review" class="header__link">Отзывы</a>
+            <a href="./index.html#contact" class="header__link">Контакты</a>
         </nav>
     </header>
 
@@ -59,7 +59,7 @@
             </div>
         </section>
 
-        <section class="authorization-section display-flex flex-column align-center">
+        <section class="authorization-section display-flex flex-column align-center" id="authorization">
 
             <h2>Авторизация</h2>
 
@@ -79,7 +79,7 @@
 
         </section>
 
-        <section class="about-section display-flex align-center flex-column">
+        <section class="about-section display-flex align-center flex-column" id="about">
             <h2>Book Haven</h2>
             <div class="about-section__container display-flex">
                 <div>
@@ -124,7 +124,7 @@
             </div>
         </section>
 
-        <section class="new-books-section display-flex flex-column align-center">
+        <section class="new-books-section display-flex flex-column align-center" id="newbook">
             <h2>Новые книжки</h2>
             <div class="new-books-section__container display-flex flex-row align-center justify-center">
                 <div class="book display-flex flex-column justify-between align-center">
@@ -201,7 +201,7 @@
             </div>
         </section>
 
-        <section class="search-section display-flex flex-column justify-center align-center">
+        <section class="search-section display-flex flex-column justify-center align-center" id="search">
             <h2>Поиск книги по названию или автору:</h2>
             <div class="search-section__container display-flex flex-row justify-evenly align-center">
                 <input type="text" id="book_search" class="input input--large" list="book-suggestions"
@@ -219,7 +219,7 @@
             </div>
         </section>
 
-        <section class="reviews-section display-flex flex-column justify-center align-center">
+        <section class="reviews-section display-flex flex-column justify-center align-center" id="review">
             <h2>Отзывы</h2>
             <div class="reviews-section__container display-flex flex-row justify-between align-center">
                 <button class="button button--small" id="review_left">
@@ -261,23 +261,23 @@
 
     <footer class="footer display-flex flex-row justify-center">
         <div class="footer__container display-flex flex-row justify-between">
-            <div class="footer__nav display-flex flex-column">
-                <a href="#" class="footer__link">+7 (800) 123-45-67</a>
-                <a href="#" class="footer__link">books@prof.ru</a>
+            <div class="footer__nav display-flex flex-column" id="contact">
+                <a href="tel:+78001234567" class="footer__link">+7 (800) 123-45-67</a>
+                <a href="mailto:books@prof.ru" class="footer__link">books@prof.ru</a>
             </div>
             <div class="footer__nav display-flex flex-column">
                 <div class="footer__nav-row display-flex flex-row justify-evenly">
-                    <a href="#" class="footer__link">Главная</a>
-                    <a href="#" class="footer__link">Регистрация</a>
-                    <a href="#" class="footer__link">Каталог</a>
+                    <a href="./index.html" class="footer__link">Главная</a>
+                    <a href="./registration.html" class="footer__link">Регистрация</a>
+                    <a href="./catalog.html" class="footer__link">Каталог</a>
                 </div>
                 <div class="footer__nav-row display-flex flex-row justify-evenly">
-                    <a href="#" class="footer__link">Читать книгу</a>
-                    <a href="#" class="footer__link">Личный кабинет</a>
-                    <a href="#" class="footer__link">Читать книгу — темная тема</a>
+                    <a href="./read.html" class="footer__link">Читать книгу</a>
+                    <a href="./profile.html" class="footer__link">Личный кабинет</a>
+                    <a href="./read_black.html" class="footer__link">Читать книгу — темная тема</a>
                 </div>
                 <div class="footer__nav-row display-flex flex-row justify-evenly">
-                    <a href="#" class="footer__link">Личный кабинет администратора</a>
+                    <a href="./admin.html" class="footer__link">Личный кабинет администратора</a>
                 </div>
             </div>
         </div>
