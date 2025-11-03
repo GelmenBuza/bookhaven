@@ -1,20 +1,4 @@
-body {
-    background-color: #e7e6e6;
-}
 
-/* header */
-
-.header {}
-
-.header__nav {
-    width: 90%;
-    background-color: #bde4d1;
-    padding: 15px;
-    border-radius: 10px;
-    gap: 20px;
-}
-
-.header__link {}
 
 /* main */
 
@@ -43,7 +27,6 @@ body {
 .welcome-section__slider>img.faded {
     opacity: 0;
 }
-
 
 .welcome-section__slider>div {
     position: absolute;
@@ -83,9 +66,7 @@ body {
     border: 1px solid red !important;
 }
 
-
 /* Секция автоизации */
-
 
 .authorization-section {}
 
@@ -265,26 +246,3 @@ body {
 .news-subscribe-section__checkbox {
     border-radius: 10px;
 }
-
-
-/* footer */
-
-.footer {
-    padding: 50px;
-    background-color: #bde4d1;
-}
-
-.footer__container {
-    width: 90%;
-    padding: 0 50px
-}
-
-.footer__nav {
-    gap: 20px;
-}
-
-.footer__nav-row {
-    gap: 20px
-}
-
-.footer__link {}

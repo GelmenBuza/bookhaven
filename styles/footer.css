@@ -1,0 +1,19 @@
+.footer {
+    padding: 50px;
+    background-color: #bde4d1;
+}
+
+.footer__container {
+    width: 90%;
+    padding: 0 50px
+}
+
+.footer__nav {
+    gap: 20px;
+}
+
+.footer__nav-row {
+    gap: 20px
+}
+
+.footer__link {}

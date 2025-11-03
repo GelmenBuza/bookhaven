@@ -1,0 +1,12 @@
+
+.header {}
+
+.header__nav {
+    width: 90%;
+    background-color: #bde4d1;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.header__link {}
