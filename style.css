@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-button {
+.button {
     background-color: rgba(255, 255, 255, 0.753);
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.247);
@@ -14,7 +14,7 @@ button {
     transition: 0.2s ease;
 }
 
-button:hover {
+.button:hover {
     box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.1);
 }
 
@@ -28,19 +28,19 @@ button:hover {
     border: none;
 }
 
-.button--med {
+.button--medium {
     height: 25px;
     width: 150px;
 }
 
-.link {
+a {
     color: #000;
     text-decoration: none;
     transition: 0.2s ease;
     cursor: pointer;
 }
 
-.link:hover {
+a:hover {
     color: #28724f;
 }
 
@@ -49,10 +49,11 @@ section {
     padding: 50px;
 }
 
-input {
+.input {
     background-color: #ffffffc0;
     border-radius: 10px;
     border: 1px solid #0000003f;
+    padding: 10px 15px;
 }
 
 .input--small {
@@ -60,12 +61,44 @@ input {
     height: 20px;
 }
 
-.input--med {
+.input--medium {
     width: 250px;
     height: 30px;
 }
 
-.input--big {
+.input--large {
     width: 80%;
     height: 30px;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
 }

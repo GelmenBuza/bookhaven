@@ -9,45 +9,48 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__div">
-            <nav class="header__nav">
-                <a href="#" class="link">Регистрация</a>
-                <a href="#" class="link">Авторизация</a>
-                <a href="#" class="link">Личный кабинет</a>
-                <a href="#" class="link">О нас</a>
-                <a href="#" class="link">Новые книги</a>
-                <a href="#" class="link">Поиск</a>
-                <a href="#" class="link">Отзывы</a>
-                <a href="#" class="link">Контакты</a>
-            </nav>
-        </div>
+    <header class="header display-flex justify-center">
+        <nav class="header__nav display-flex justify-around flex-row">
+            <a href="#" class="header__link">Регистрация</a>
+            <a href="#" class="header__link">Авторизация</a>
+            <a href="#" class="header__link">Личный кабинет</a>
+            <a href="#" class="header__link">О нас</a>
+            <a href="#" class="header__link">Новые книги</a>
+            <a href="#" class="header__link">Поиск</a>
+            <a href="#" class="header__link">Отзывы</a>
+            <a href="#" class="header__link">Контакты</a>
+        </nav>
     </header>
+
     <main>
-        <section class="welcome-section">
-            <div class="welcome-section__slider">
+        <section class="welcome-section display-flex flex-column align-center justify-center">
+            <div class="welcome-section__slider display-flex">
                 <img src="./assets/images/landingPage/slides/1.jpg" alt="slide image" id="slideImg">
-                <div>
+                <div class="display-flex flex-column">
                     <h2>Читайте любимые книги онлайн</h2>
                     <h3>Загружайте свои книги или читайте книги, добавленные нами</h3>
-                    <button class="button--med">Начать чтение</button>
+                    <button class="button button--medium">Начать чтение</button>
                 </div>
 
             </div>
-            <div class="welcome-section__slider-control">
-                <button class="button--small" id="slideButtonLeft">
+            <div class="welcome-section__slider-control display-flex flex-row justify-center align-center">
+                <button class="button button--small" id="slideButtonLeft">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor"
                             d="m7.825 12l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T5.426 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7zm6.6 0l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T12.026 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7z" />
                     </svg>
                 </button>
-                <div class="welcome-section__anotherSlide">
-                    <button class="aciveSlide"><img src="./assets/images/landingPage/slides/1.jpg" alt="1"></button>
-                    <button><img src="./assets/images/landingPage/slides/2.jpg" alt="2"></button>
-                    <button><img src="./assets/images/landingPage/slides/3.jpg" alt="3"></button>
-                    <button><img src="./assets/images/landingPage/slides/4.jpg" alt="4"></button>
+                <div class="welcome-section__pager display-flex flex-row justify-evenly">
+                    <button class="welcome-section__slide welcome-section__slide--active"><img
+                            src="./assets/images/landingPage/slides/1.jpg" alt="1"></button>
+                    <button class="welcome-section__slide "><img src="./assets/images/landingPage/slides/2.jpg"
+                            alt="2"></button>
+                    <button class="welcome-section__slide"><img src="./assets/images/landingPage/slides/3.jpg"
+                            alt="3"></button>
+                    <button class="welcome-section__slide"><img src="./assets/images/landingPage/slides/4.jpg"
+                            alt="4"></button>
                 </div>
-                <button class="button--small" id="slideButtonRight">
+                <button class="button button--small" id="slideButtonRight">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor"
                             d="M9.575 12L5 7.4L6.4 6l6 6l-6 6L5 16.6zm6.6 0L11.6 7.4L13 6l6 6l-6 6l-1.4-1.4z" />
@@ -56,25 +59,29 @@
             </div>
         </section>
 
-        <section class="autorization-section">
+        <section class="authorization-section display-flex flex-column align-center">
 
             <h2>Авторизация</h2>
 
-            <form id="autorization_form" action="#" method="get">
+            <form class="authorization-section__form display-flex flex-column align-center" id="authorization_form"
+                action="#" method="get">
 
-                <input class="input--med" type="email" name="email" id="email" placeholder="Введите вашу почту...">
+                <input class="input input--medium" type="email" name="email" id="auth-email"
+                    placeholder="Введите вашу почту...">
 
-                <input class="input--med" type="password" name="password" id="password" placeholder="Введите ваш пароль...">
+                <input class="input input--medium" type="password" name="password" id="password"
+                    placeholder="Введите ваш пароль...">
 
-                <button type="submit" class="button--med">Submit</button>
+                <button type="submit" class="button button--medium">Готово</button>
 
-                <a href="#" class="link">Сброс пароля</a>
             </form>
+            <a href="#" class="authorization-section__link">Сброс пароля</a>
 
         </section>
-        <section class="about-section">
-            <div class="about-section__div">
-                <h2>Book Haven</h2>
+
+        <section class="about-section display-flex align-center flex-column">
+            <h2>Book Haven</h2>
+            <div class="about-section__container display-flex">
                 <div>
                     <p>BookHaven — это уникальная платформа для бесплатного чтения книг, где каждый найдет что-то по
                         душе.
@@ -107,8 +114,8 @@
             </div>
         </section>
 
-        <section class="featuresDemo-section">
-            <div class="featuresDemo-section__div">
+        <section class="features-demo-section display-flex flex-column align-center">
+            <div class="features-demo-section__container display-flex flex-column align-center">
                 <h2>Посмотрите, как создаются наши любимые книги:</h2>
                 <video controls>
                     <source src="./assets/video/howto.mp4" type="video/mp4">
@@ -117,13 +124,13 @@
             </div>
         </section>
 
-        <section class="newBooks-section">
+        <section class="new-books-section display-flex flex-column align-center">
             <h2>Новые книжки</h2>
-            <div class="newBooks-section__div">
-                <div class="book">
-                    <img src="./assets/images/books/Антиштраф 2018.jpg" alt="">
-                    <p class="book_name">Антиштраф 2018</p>
-                    <p class="book_caption">Надоело платить сотрудникам ГИБДД? Так может, не нарушать Правила? К
+            <div class="new-books-section__container display-flex flex-row align-center justify-center">
+                <div class="book display-flex flex-column justify-between align-center">
+                    <img src="./assets/images/books/Anti-fine_2018.jpg" alt="">
+                    <p class="book__title">Антиштраф 2018</p>
+                    <p class="book__description">Надоело платить сотрудникам ГИБДД? Так может, не нарушать Правила? К
                         сожалению, это не всегда помогает. Нечестные инспекторы отработали массу методик, чтобы
                         подвести человека к нарушению или же получить взятку, просто пользуясь правовой
                         неграмотностью людей. Между тем закон дает водителю немало возможностей сильно сэкономить на
@@ -131,12 +138,12 @@
                         как себя вести в разных ситуациях. Материал четко разделен по категориям, так что вам совсем
                         не обязательно изучать книгу заранее. Положите ее в бардачок и воспользуйтесь при
                         возникновении проблем.</p>
-                    <button class="button--med">Читать</button>
+                    <button class="button button--medium">Читать</button>
                 </div>
-                <div class="book">
-                    <img src="./assets/images/books/Всё об ИИ чат-боте ChatGPT.jpg" alt="">
-                    <p class="book_name">Всё об ИИ чат-боте ChatGPT</p>
-                    <p class="book_caption">Книга, которая представляет собой обзор и практическое руководство по
+                <div class="book display-flex flex-column justify-between align-center">
+                    <img src="./assets/images/books/All_about_the_AI_chatbot_ChatGPT.jpg" alt="">
+                    <p class="book__title">Всё об ИИ чат-боте ChatGPT</p>
+                    <p class="book__description">Книга, которая представляет собой обзор и практическое руководство по
                         использованию мощного инструмента искусственного интеллекта - чат-бота ChatGPT. Книга
                         содержит 100 бизнес- идей, которые можно реализовать, используя возможности ChatGPT, а также
                         100 запросов для автоматизации задач и 100 примеров бытовых запросов для улучшения жизни и
@@ -144,23 +151,23 @@
                         ChatGPT, а также даются советы по оптимальному использованию этого инструмента. "Всё об ИИ
                         чат-боте ChatGPT" является необходимой книгой для тех, кто хочет использовать современные
                         технологии для достижения своих целей в бизнесе и повседневной жизни.</p>
-                    <button class="button--med">Читать</button>
+                    <button class="button button--medium">Читать</button>
                 </div>
-                <div class="book">
-                    <img src="/assets/images/books/Игра на чужом поле.jpg" alt="">
-                    <p class="book_name">Игра на чужом поле</p>
-                    <p class="book_caption">Толе Штыбе предстоит вести свою партию сразу на нескольких чужих досках
+                <div class="book display-flex flex-column justify-between align-center">
+                    <img src="/assets/images/books/Playing_on_someone_else's_field.jpg" alt="">
+                    <p class="book__title">Игра на чужом поле</p>
+                    <p class="book__description">Толе Штыбе предстоит вести свою партию сразу на нескольких чужих досках
                         — от политической арены до коммерческого банка. Его жизнь закручивается по законам непростых
                         девяностых: победа на выборах, рискованные ходы в кооперативе с «сибирскими» окнами,
                         неожиданные «шахи» на новой должности в крайкоме и международный боксерский турнир в
                         Норвегии. Штыбе нужно просчитывать ходы на несколько шагов вперед, где каждый промах может
                         стать матом, а каждый удачный ход — новой победой.</p>
-                    <button class="button--med">Читать</button>
+                    <button class="button button--medium">Читать</button>
                 </div>
-                <div class="book">
-                    <img src="./assets/images/books/Готовим по-русски. Рецепты, традиции, наследие.jpg" alt="">
-                    <p class="book_name">Готовим по-русски. Рецепты, традиции, наследие</p>
-                    <p class="book_caption">Русская кухня – это живой организм, который не перестает развиваться.
+                <div class="book display-flex flex-column justify-between align-center">
+                    <img src="./assets/images/books/Cooking_in_Russian_Recipes_traditions_heritage.jpg" alt="">
+                    <p class="book__title">Готовим по-русски. Рецепты, традиции, наследие</p>
+                    <p class="book__description">Русская кухня – это живой организм, который не перестает развиваться.
                         Этот организм не только вбирает в себя новые мировые кулинарные тенденции, но и сам
                         обогащает общемировую кулинарную культуру. Поэтому в своей новой книге Олег Ольхов приводит
                         рецепты самых разных эпох и времен – от древнерусской кухни IX-XVI веков (по классификации
@@ -168,14 +175,14 @@
                         интересные монастырские рецепты, основанные на современных русских кулинарных тенденциях, и
                         традиционные рецепты, посвященные Пасхе и Рождеству Христову. Наконец собственные рецепты
                         автора, основанные на опыте работы в ресторанах, в которых устроены русские печи.</p>
-                    <button class="button--med">Читать</button>
+                    <button class="button button--medium">Читать</button>
                 </div>
-                <div class="book">
-                    <img src="./assets/images/books/Занудная педиатрия для мам, пап, бабушек и дедушек_Разное про незаразное.jpg"
+                <div class="book display-flex flex-column justify-between align-center">
+                    <img src="./assets/images/books/Boring_pediatrics_for_moms_dads_grandparents_Miscellaneous_about_non-contagious.jpg"
                         alt="">
-                    <p class="book_name">Занудная педиатрия для мам, пап, бабушек и дедушек: Разное про незаразное
+                    <p class="book__title">Занудная педиатрия для мам, пап, бабушек и дедушек: Разное про незаразное
                     </p>
-                    <p class="book_caption">Роман Шиян – врач-педиатр с более чем 10-летним стажем, сторонник
+                    <p class="book__description">Роман Шиян – врач-педиатр с более чем 10-летним стажем, сторонник
                         доказательного подхода в медицине, автор популярного блога «Занудная педиатрия». В книге он
                         освещает самые разные темы, связанные с неинфекционными заболеваниями и расстройствами у
                         детей, которые наиболее часто беспокоят его пациентов и читателей. Для чего младенца
@@ -186,20 +193,21 @@
                         этой книги вы не станете врачом, однако она может позволить вам более осознанно относиться к
                         здоровью своих детей, снизить уровень тревожности и иметь представление, почему врачи дают
                         вам те или иные рекомендации и чего ожидать в дальнейшем.</p>
-                    <button class="button--med">Читать</button>
+                    <button class="button button--medium">Читать</button>
                 </div>
-                <div class="watch_all">
-                    <button class="button--med">Смотреть все</button>
+                <div class="new-books-section__watch-all display-flex align-center justify-center">
+                    <button class="button button--medium">Смотреть все</button>
                 </div>
             </div>
         </section>
-        <section class="search-section">
+
+        <section class="search-section display-flex flex-column justify-center align-center">
             <h2>Поиск книги по названию или автору:</h2>
-            <div class="search-section__div">
-                <input type="text" id="book_search" class="input--big" list="book_suggestions"
+            <div class="search-section__container display-flex flex-row justify-evenly align-center">
+                <input type="text" id="book_search" class="input input--large" list="book-suggestions"
                     placeholder="Название или автор...">
 
-                <button class="button--med">Поиск</button>
+                <button class="button button--medium">Поиск</button>
                 <datalist id="book-suggestions">
                     <option value="Война и мир">
                     <option value="Лев Толстой">
@@ -209,63 +217,74 @@
                     <option value="Михаил Булгаков">
                 </datalist>
             </div>
+        </section>
 
+        <section class="reviews-section display-flex flex-column justify-center align-center">
+            <h2>Отзывы</h2>
+            <div class="reviews-section__container display-flex flex-row justify-between align-center">
+                <button class="button button--small" id="review_left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m7.825 12l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T5.426 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7zm6.6 0l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T12.026 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7z" />
+                    </svg>
+                </button>
+                <div class="reviews-section__list display-flex flex-row justify-center"></div>
+
+                <button class="button button--small" id="review_right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M9.575 12L5 7.4L6.4 6l6 6l-6 6L5 16.6zm6.6 0L11.6 7.4L13 6l6 6l-6 6l-1.4-1.4z" />
+                    </svg>
+                </button>
+            </div>
 
         </section>
-        <section class="reviews-section">
-            <button class="button--small" id="review_left">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="currentColor"
-                        d="m7.825 12l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T5.426 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7zm6.6 0l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T12.026 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7z" />
-                </svg>
-            </button>
-            <div class="reviews_cont"></div>
-            <button class="button--small" id="review_right">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="currentColor"
-                        d="M9.575 12L5 7.4L6.4 6l6 6l-6 6L5 16.6zm6.6 0L11.6 7.4L13 6l6 6l-6 6l-1.4-1.4z" />
-                </svg>
-            </button>
-        </section>
-        <section class="newsSubscribe-section">
-            <div class="newsSubscribe-section__div">
-                <p>Подписка на новости</p>
-                <form action="#" class="subscride_form">
-                    <div>
-                        E-mail: <input class="input--small" type="email" name="email" id="email" placeholder="Введите вашу почту...">
-                    </div>
-                    <div>
-                        <input type="checkbox" name="confirm"><span>Я согласен на бработку персональных данных</span>
-                    </div>
+
+        <section class="news-subscribe-section display-flex flex-row justify-center">
+            <div class="news-subscribe-section__container display-flex flex-column justify-center align-center">
+                <h2>Подписка на новости</h2>
+                <form action="#" class="news-subscribe-section__form display-flex flex-column align-center">
+                    <label class="news-subscribe-section__label display-flex justify-evenly">
+                        E-mail:
+                        <input class="input input--small" type="email" name="email" id="subscribe-email"
+                            placeholder="Введите вашу почту...">
+                    </label>
+                    <label class="news-subscribe-section__label">
+                        <input type="checkbox" name="confirm" class="news-subscribe-section__checkbox">
+                        Я согласен на обработку персональных данных
+                    </label>
                 </form>
-                <button class="button--med">Подписаться</button>
+                <button class="button button--medium">Подписаться</button>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer__div">
-            <div class="footer__nav">
-                <a href="#" class="link">+7 (800) 123-45-67</a>
-                <a href="#" class="link">books@prof.ru</a>
+
+    <footer class="footer display-flex flex-row justify-center">
+        <div class="footer__container display-flex flex-row justify-between">
+            <div class="footer__nav display-flex flex-column">
+                <a href="#" class="footer__link">+7 (800) 123-45-67</a>
+                <a href="#" class="footer__link">books@prof.ru</a>
             </div>
-            <div class="footer__nav">
-                <div class="footer__nav-row">
-                    <a href="#" class="link">Главная</a>
-                    <a href="#" class="link">Регистрация</a>
-                    <a href="#" class="link">Каталог</a>
+            <div class="footer__nav display-flex flex-column">
+                <div class="footer__nav-row display-flex flex-row justify-evenly">
+                    <a href="#" class="footer__link">Главная</a>
+                    <a href="#" class="footer__link">Регистрация</a>
+                    <a href="#" class="footer__link">Каталог</a>
                 </div>
-                <div class="footer__nav-row">
-                    <a href="#" class="link">Читать книгу</a>
-                    <a href="#" class="link">Читать книгу — темная тема</a>
-                    <a href="#" class="link">Личный кабинет</a>
+                <div class="footer__nav-row display-flex flex-row justify-evenly">
+                    <a href="#" class="footer__link">Читать книгу</a>
+                    <a href="#" class="footer__link">Личный кабинет</a>
+                    <a href="#" class="footer__link">Читать книгу — темная тема</a>
                 </div>
-                <div class="footer__nav-row">
-                    <a href="#" class="link">Личный кабинет администратора</a>
+                <div class="footer__nav-row display-flex flex-row justify-evenly">
+                    <a href="#" class="footer__link">Личный кабинет администратора</a>
                 </div>
             </div>
         </div>
     </footer>
+
     <script type="module" src="./src/main.js"></script>
+
 </body>
 
 </html>
