@@ -1,8 +1,8 @@
 
 const mainSlide = document.getElementById('slideImg')
 const slideButtons = [document.getElementById('slideButtonLeft'), document.getElementById('slideButtonRight')]
-const slides = document.querySelector('.welcome-section__pager')
-let activeSlide = document.querySelector('.welcome-section__slide--active')
+const slides = document.querySelector('.welcome__pager')
+let activeSlide = document.querySelector('.welcome__slide--active')
 
 
 function makeSlides() {
@@ -16,8 +16,8 @@ function makeSlides() {
                 mainSlide.attributes.src.textContent = ell.firstChild.attributes.src.textContent;
 
             }, 250)
-            ell.classList.add('welcome-section__slide--active');
-            activeSlide.classList.remove('welcome-section__slide--active');
+            ell.classList.add('welcome__slide--active');
+            activeSlide.classList.remove('welcome__slide--active');
             activeSlide = ell;
         })
     }
@@ -48,14 +48,14 @@ function generateStars(count) {
 }
 
 function generateReview(resviewsText, i, side) {
-    const resviewsDiv = document.querySelector('.reviews-section__list');
+    const resviewsDiv = document.querySelector('.reviews__list');
     resviewsDiv.innerHTML = `
-                <div class="review display-flex flex-row ${side}">
-                <div class="review__left_side display-flex flex-column justify-center align-center">
+                <div class="review df ${side}">
+                <div class="review__left_side gap20 df fc jcc aic">
                     <p>${resviewsText.at(i).authorName}</p>
                     <img src="./assets/images/avatars/author_${Math.abs(i) + 1}.jpg" alt="">
                 </div>
-                <div class="review__right_side display-flex flex-column justify-between">
+                <div class="review__right_side gap20 df fc jcb">
                     <div class="stars">
                         ${generateStars(resviewsText.at(i).raiting)}
                     </div>

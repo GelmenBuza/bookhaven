@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <header class="header display-flex justify-center">
-        <nav class="header__nav display-flex justify-around flex-row">
+    <header class="header df jcc">
+        <nav class="header__nav df jca">
             <a href="./registration.html" class="header__link">Регистрация</a>
-            <a href="./index.html#authorization" class="header__link">Авторизация</a>
+            <a href="./index.html#auth" class="header__link">Авторизация</a>
             <a href="./profile.html" class="header__link">Личный кабинет</a>
             <a href="./index.html#about" class="header__link">О нас</a>
             <a href="./index.html#newbook" class="header__link">Новые книги</a>
@@ -23,48 +23,40 @@
     </header>
 
     <main>
-        <section class="welcome-section display-flex flex-column align-center justify-center">
-            <div class="welcome-section__slider display-flex">
+        <section class="welcome df fc aic jcc">
+            <div class="welcome__slider df">
                 <img src="./assets/images/landingPage/slides/1.jpg" alt="slide image" id="slideImg">
-                <div class="display-flex flex-column">
+                <div class="gap20 df fc">
                     <h2>Читайте любимые книги онлайн</h2>
                     <h3>Загружайте свои книги или читайте книги, добавленные нами</h3>
-                    <button class="button button--medium">Начать чтение</button>
+                    <button class="btn btn--medium">Начать чтение</button>
                 </div>
-
             </div>
-            <div class="welcome-section__slider-control display-flex flex-row justify-center align-center">
-                <button class="button button--small" id="slideButtonLeft">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="m7.825 12l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T5.426 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7zm6.6 0l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T12.026 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7z" />
-                    </svg>
+            <div class="welcome__slider-control gap20 df jcc aic">
+                <button class="btn btn--small" id="slideButtonLeft"> 
+                    ←
                 </button>
-                <div class="welcome-section__pager display-flex flex-row justify-evenly">
-                    <button class="welcome-section__slide welcome-section__slide--active"><img
-                            src="./assets/images/landingPage/slides/1.jpg" alt="1"></button>
-                    <button class="welcome-section__slide "><img src="./assets/images/landingPage/slides/2.jpg"
+                <div class="welcome__pager gap20 df jce">
+                    <button class="welcome__slide welcome__slide--active"><img
+                            src="./assets/images/landingPage/slides/1.jpg" alt="1"></button> <!-- ФОтка не в проекте, alt переделать-->
+                    <button class="welcome__slide "><img src="./assets/images/landingPage/slides/2.jpg"
                             alt="2"></button>
-                    <button class="welcome-section__slide"><img src="./assets/images/landingPage/slides/3.jpg"
+                    <button class="welcome__slide"><img src="./assets/images/landingPage/slides/3.jpg"
                             alt="3"></button>
-                    <button class="welcome-section__slide"><img src="./assets/images/landingPage/slides/4.jpg"
+                    <button class="welcome__slide"><img src="./assets/images/landingPage/slides/4.jpg"
                             alt="4"></button>
                 </div>
-                <button class="button button--small" id="slideButtonRight">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M9.575 12L5 7.4L6.4 6l6 6l-6 6L5 16.6zm6.6 0L11.6 7.4L13 6l6 6l-6 6l-1.4-1.4z" />
-                    </svg>
+                <button class="btn btn--small" id="slideButtonRight">
+                    →
                 </button>
             </div>
         </section>
 
-        <section class="authorization-section display-flex flex-column align-center" id="authorization">
+        <section class="auth df fc aic" id="auth"> <!-- + auth долго, auth как будто круче и быстрее-->
 
-            <h2>Авторизация</h2>
+            <h2 class="auth__title">Авторизация</h2> <!-- + Классик auth__title   -->
 
-            <form class="authorization-section__form display-flex flex-column align-center" id="authorization_form"
-                action="#" method="get">
+            <form class="auth__form gap20 df fc aic" id="auth_form" action="#">
 
                 <input class="input input--medium" type="email" name="email" id="auth-email"
                     placeholder="Введите вашу почту...">
@@ -72,17 +64,17 @@
                 <input class="input input--medium" type="password" name="password" id="password"
                     placeholder="Введите ваш пароль...">
 
-                <button type="submit" class="button button--medium">Готово</button>
+                <button type="submit" class="btn btn--medium">Готово</button>
 
             </form>
-            <a href="#" class="authorization-section__link">Сброс пароля</a>
+            <a href="#" class="auth__link">Сброс пароля</a>
 
         </section>
 
-        <section class="about-section display-flex align-center flex-column" id="about">
-            <h2>Book Haven</h2>
-            <div class="about-section__container display-flex">
-                <div>
+        <section class="about gap20 df aic fc" id="about">
+            <h2 class="about__title">Book Haven</h2>
+            <div class="about__container df"> <!-- Очень длинный класс(первый) about__container, если бы срезал -section   -->
+                <div> <!-- базовый класс-->
                     <p>BookHaven — это уникальная платформа для бесплатного чтения книг, где каждый найдет что-то по
                         душе.
                         На
@@ -110,25 +102,25 @@
                         к нашему сообществу книголюбов и откройте для себя мир литературы без границ!
                     </p>
                 </div>
-                <img src="./assets/images/landingPage/aboutUs.png" alt="">
+                <img src="./assets/images/landingPage/aboutUs.png" alt=""> <!-- alt, и фото не то-->
             </div>
         </section>
 
-        <section class="features-demo-section display-flex flex-column align-center">
-            <div class="features-demo-section__container display-flex flex-column align-center">
-                <h2>Посмотрите, как создаются наши любимые книги:</h2>
+        <section class="features-demo df fc aic">
+            <div class="features-demo__container df fc aic">
+                <h2 class="demo__title">Посмотрите, как создаются наши любимые книги:</h2> <!-- класс-->
                 <video controls>
-                    <source src="./assets/video/howto.mp4" type="video/mp4">
+                    <source src="./assets/video/howto.mp4" type="video/mp4"> <!-- класс-->
                     Ваш браузер не поддерживает воспроизведение видео.
                 </video>
             </div>
         </section>
 
-        <section class="new-books-section display-flex flex-column align-center" id="newbook">
-            <h2>Новые книжки</h2>
-            <div class="new-books-section__container display-flex flex-row align-center justify-center">
-                <div class="book display-flex flex-column justify-between align-center">
-                    <img src="./assets/images/books/Anti-fine_2018.jpg" alt="">
+        <section class="new-books gap20 df fc aic" id="newbook">
+            <h2 class="new-books__title">Новые книжки</h2>
+            <div class="new-books__container gap20 df aic jcc"> <!-- new-books__container ------ СТРАШНО аж УЖАС-->
+                <div class="book df fc jcb aic">
+                    <img src="./assets/images/books/Anti-fine_2018.jpg" alt=""> <!-- alt-->
                     <p class="book__title">Антиштраф 2018</p>
                     <p class="book__description">Надоело платить сотрудникам ГИБДД? Так может, не нарушать Правила? К
                         сожалению, это не всегда помогает. Нечестные инспекторы отработали массу методик, чтобы
@@ -138,9 +130,9 @@
                         как себя вести в разных ситуациях. Материал четко разделен по категориям, так что вам совсем
                         не обязательно изучать книгу заранее. Положите ее в бардачок и воспользуйтесь при
                         возникновении проблем.</p>
-                    <button class="button button--medium">Читать</button>
+                    <button class="btn btn--medium">Читать</button>
                 </div>
-                <div class="book display-flex flex-column justify-between align-center">
+                <div class="book df fc jcb aic">
                     <img src="./assets/images/books/All_about_the_AI_chatbot_ChatGPT.jpg" alt="">
                     <p class="book__title">Всё об ИИ чат-боте ChatGPT</p>
                     <p class="book__description">Книга, которая представляет собой обзор и практическое руководство по
@@ -151,9 +143,9 @@
                         ChatGPT, а также даются советы по оптимальному использованию этого инструмента. "Всё об ИИ
                         чат-боте ChatGPT" является необходимой книгой для тех, кто хочет использовать современные
                         технологии для достижения своих целей в бизнесе и повседневной жизни.</p>
-                    <button class="button button--medium">Читать</button>
+                    <button class="btn btn--medium">Читать</button>
                 </div>
-                <div class="book display-flex flex-column justify-between align-center">
+                <div class="book df fc jcb aic">
                     <img src="/assets/images/books/Playing_on_someone_else's_field.jpg" alt="">
                     <p class="book__title">Игра на чужом поле</p>
                     <p class="book__description">Толе Штыбе предстоит вести свою партию сразу на нескольких чужих досках
@@ -162,9 +154,9 @@
                         неожиданные «шахи» на новой должности в крайкоме и международный боксерский турнир в
                         Норвегии. Штыбе нужно просчитывать ходы на несколько шагов вперед, где каждый промах может
                         стать матом, а каждый удачный ход — новой победой.</p>
-                    <button class="button button--medium">Читать</button>
+                    <button class="btn btn--medium">Читать</button>
                 </div>
-                <div class="book display-flex flex-column justify-between align-center">
+                <div class="book df fc jcb aic">
                     <img src="./assets/images/books/Cooking_in_Russian_Recipes_traditions_heritage.jpg" alt="">
                     <p class="book__title">Готовим по-русски. Рецепты, традиции, наследие</p>
                     <p class="book__description">Русская кухня – это живой организм, который не перестает развиваться.
@@ -175,9 +167,9 @@
                         интересные монастырские рецепты, основанные на современных русских кулинарных тенденциях, и
                         традиционные рецепты, посвященные Пасхе и Рождеству Христову. Наконец собственные рецепты
                         автора, основанные на опыте работы в ресторанах, в которых устроены русские печи.</p>
-                    <button class="button button--medium">Читать</button>
+                    <button class="btn btn--medium">Читать</button>
                 </div>
-                <div class="book display-flex flex-column justify-between align-center">
+                <div class="book df fc jcb aic">
                     <img src="./assets/images/books/Boring_pediatrics_for_moms_dads_grandparents_Miscellaneous_about_non-contagious.jpg"
                         alt="">
                     <p class="book__title">Занудная педиатрия для мам, пап, бабушек и дедушек: Разное про незаразное
@@ -193,21 +185,21 @@
                         этой книги вы не станете врачом, однако она может позволить вам более осознанно относиться к
                         здоровью своих детей, снизить уровень тревожности и иметь представление, почему врачи дают
                         вам те или иные рекомендации и чего ожидать в дальнейшем.</p>
-                    <button class="button button--medium">Читать</button>
+                    <button class="btn btn--medium">Читать</button>
                 </div>
-                <div class="new-books-section__watch-all display-flex align-center justify-center">
-                    <button class="button button--medium">Смотреть все</button>
+                <div class="new-books__watch-all df aic jcc"> <!-- new-books__watch-all  тоже страшно-->
+                    <button class="btn btn--medium">Смотреть все</button>
                 </div>
             </div>
         </section>
 
-        <section class="search-section display-flex flex-column justify-center align-center" id="search">
-            <h2>Поиск книги по названию или автору:</h2>
-            <div class="search-section__container display-flex flex-row justify-evenly align-center">
-                <input type="text" id="book_search" class="input input--large" list="book-suggestions"
-                    placeholder="Название или автор...">
+        <section class="search df fc jcc aic" id="search">
+            <h2 class="search__title">Поиск книги по названию или автору:</h2> <!-- + класс -->
+            <div class="search__container df jce aic">
+                <input type="search" id="book_search" class="input input--large" list="book-suggestions"
+                    placeholder="Название или автор..."> <!-- + type search -->
 
-                <button class="button button--medium">Поиск</button>
+                <button class="btn btn--medium">Поиск</button>
                 <datalist id="book-suggestions">
                     <option value="Война и мир">
                     <option value="Лев Толстой">
@@ -219,64 +211,54 @@
             </div>
         </section>
 
-        <section class="reviews-section display-flex flex-column justify-center align-center" id="review">
-            <h2>Отзывы</h2>
-            <div class="reviews-section__container display-flex flex-row justify-between align-center">
-                <button class="button button--small" id="review_left">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="m7.825 12l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T5.426 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7zm6.6 0l3.875 3.9q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275l-4.6-4.6q-.15-.15-.213-.325T12.026 12t.063-.375t.212-.325l4.6-4.6q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7z" />
-                    </svg>
-                </button>
-                <div class="reviews-section__list display-flex flex-row justify-center"></div>
+        <section class="reviews gap20 df fc jcc aic" id="review">
+            <h2 class="review__title">Отзывы</h2>
+            <div class="reviews__container df jcb aic">
+                <button class="btn btn--small" id="review_left">←</button>
+                <div class="reviews__list df jcc"></div>
 
-                <button class="button button--small" id="review_right">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M9.575 12L5 7.4L6.4 6l6 6l-6 6L5 16.6zm6.6 0L11.6 7.4L13 6l6 6l-6 6l-1.4-1.4z" />
-                    </svg>
-                </button>
+                <button class="btn btn--small" id="review_right">→</button>
             </div>
 
         </section>
 
-        <section class="news-subscribe-section display-flex flex-row justify-center">
-            <div class="news-subscribe-section__container display-flex flex-column justify-center align-center">
-                <h2>Подписка на новости</h2>
-                <form action="#" class="news-subscribe-section__form display-flex flex-column align-center">
-                    <label class="news-subscribe-section__label display-flex justify-evenly">
+        <section class="news-subscribe df jcc">
+            <div class="news-subscribe__container df fc jcc aic"> <!-- класс огромный -->
+                <h2 class="subscribe__title">Подписка на новости</h2> <!-- + класс -->
+                <form action="#" class="news-subscribe__form df fc aic"> <!-- огромные классы -->
+                    <label class="news-subscribe__label df jce"> <!-- огромные классы -->
                         E-mail:
                         <input class="input input--small" type="email" name="email" id="subscribe-email"
                             placeholder="Введите вашу почту...">
                     </label>
-                    <label class="news-subscribe-section__label">
-                        <input type="checkbox" name="confirm" class="news-subscribe-section__checkbox">
+                    <label class="news-subscribe__label"> <!-- огромные классы -->
+                        <input type="checkbox" name="confirm" class="news-subscribe__checkbox"> <!-- огромные классы -->
                         Я согласен на обработку персональных данных
                     </label>
                 </form>
-                <button class="button button--medium">Подписаться</button>
+                <button class="btn btn--medium">Подписаться</button>
             </div>
         </section>
     </main>
 
-    <footer class="footer display-flex flex-row justify-center">
-        <div class="footer__container display-flex flex-row justify-between">
-            <div class="footer__nav display-flex flex-column" id="contact">
+    <footer class="footer df jcc">
+        <div class="footer__container df jcb">
+            <div class="footer__nav df fc" id="contact">
                 <a href="tel:+78001234567" class="footer__link">+7 (800) 123-45-67</a>
                 <a href="mailto:books@prof.ru" class="footer__link">books@prof.ru</a>
             </div>
-            <div class="footer__nav display-flex flex-column">
-                <div class="footer__nav-row display-flex flex-row justify-evenly">
+            <div class="footer__nav df fc">
+                <div class="footer__nav-row df jce">
                     <a href="./index.html" class="footer__link">Главная</a>
                     <a href="./registration.html" class="footer__link">Регистрация</a>
                     <a href="./catalog.html" class="footer__link">Каталог</a>
                 </div>
-                <div class="footer__nav-row display-flex flex-row justify-evenly">
+                <div class="footer__nav-row df jce">
                     <a href="./read.html" class="footer__link">Читать книгу</a>
                     <a href="./profile.html" class="footer__link">Личный кабинет</a>
                     <a href="./read_black.html" class="footer__link">Читать книгу — темная тема</a>
                 </div>
-                <div class="footer__nav-row display-flex flex-row justify-evenly">
+                <div class="footer__nav-row df jce">
                     <a href="./admin.html" class="footer__link">Личный кабинет администратора</a>
                 </div>
             </div>

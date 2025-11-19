@@ -13,29 +13,26 @@ body {
     background-color: #e7e6e6;
 }
 
-.button {
+.btn {
     background-color: rgba(255, 255, 255, 0.753);
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.247);
-    cursor: pointer !important;
+    cursor: pointer;
     transition: 0.2s ease;
 }
 
-.button:hover {
+.btn:hover {
     box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.1);
 }
 
-.button--small {
+.btn--small {
     width: 30px;
     height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 100%;
     border: none;
 }
 
-.button--medium {
+.btn--medium {
     height: 25px;
     width: 150px;
 }
@@ -78,34 +75,34 @@ section {
     height: 30px;
 }
 
-.display-flex {
+.df {
     display: flex;
 }
 
-.justify-center {
+.jcc {
     justify-content: center;
 }
 
-.justify-around {
+.jca {
     justify-content: space-around;
 }
 
-.justify-evenly {
+.jce {
     justify-content: space-evenly;
 }
 
-.justify-between {
+.jcb {
     justify-content: space-between;
 }
 
-.align-center {
+.aic {
     align-items: center;
 }
 
-.flex-row {
-    flex-direction: row;
+.fc {
+    flex-direction: column;
 }
 
-.flex-column {
-    flex-direction: column;
+.gap20 {
+    gap: 20px;
 }
