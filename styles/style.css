@@ -48,6 +48,9 @@ a:hover {
     color: #28724f;
 }
 
+li {
+    list-style-type: none;
+}
 
 section {
     padding: 50px;

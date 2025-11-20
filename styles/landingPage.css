@@ -37,12 +37,10 @@
 
 .welcome__slider-control {
     height: 100px;
-    /* gap: 30px; */
 }
 
 .welcome__pager {
     width: 50%;
-    /* gap: 50px; */
 }
 
 .welcome__slide {
@@ -67,14 +65,9 @@
 
 .auth__form {
     width: 60%;
-    /* gap: 10px; */
 }
 
 /* section about */
-
-/* .about {
-    gap: 20px;
-} */
 
 .about__container {
     width: 90%;
@@ -91,23 +84,18 @@
 
 /* section featuresDemo */
 
-.features-demo__container {
+.demo__container {
     width: 90%;
 }
 
-.features-demo__container>video {
+.demo__container>video {
     width: 800px;
     height: 600px;
 }
 
 /* section newBooks */
 
-/* .new-books {
-    gap: 20px;
-} */
-
 .new-books__container {
-    /* gap: 20px; */
     width: 800px;
     flex-wrap: wrap;
 }
@@ -149,10 +137,6 @@
 }
 
 /* section review */
-
-/* .reviews {
-    gap: 10px;
-} */
 
 .reviews__container {
     width: 90%;
@@ -199,7 +183,6 @@
 
 .review__left_side {
     flex: 1;
-    /* gap: 20px; */
 }
 
 .review__left_side>img {
@@ -210,12 +193,9 @@
 .review__right_side {
     flex: 4;
     padding: 10px 0;
-    /* gap: 20px; */
 }
 
 /* section news subscribe */
-
-.news-subscribe {}
 
 .news-subscribe__container {
     width: 300px;
@@ -224,9 +204,6 @@
     border-radius: 50px;
     padding: 20px;
 }
-
-.news-subscribe__form {}
-
 
 .news-subscribe__label {
     width: 250px;

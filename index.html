@@ -10,15 +10,17 @@
 
 <body>
     <header class="header df jcc">
-        <nav class="header__nav df jca">
-            <a href="./registration.html" class="header__link">Регистрация</a>
-            <a href="./index.html#auth" class="header__link">Авторизация</a>
-            <a href="./profile.html" class="header__link">Личный кабинет</a>
-            <a href="./index.html#about" class="header__link">О нас</a>
-            <a href="./index.html#newbook" class="header__link">Новые книги</a>
-            <a href="./index.html#search" class="header__link">Поиск</a>
-            <a href="./index.html#review" class="header__link">Отзывы</a>
-            <a href="./index.html#contact" class="header__link">Контакты</a>
+        <nav class="header__nav">
+            <ul class="header__list df jca">
+                <li><a href="./registration.html" class="header__link">Регистрация</a></li>
+                <li><a href="./index.html#auth" class="header__link">Авторизация</a></li>
+                <li><a href="./profile.html" class="header__link">Личный кабинет</a></li>
+                <li><a href="./index.html#about" class="header__link">О нас</a></li>
+                <li><a href="./index.html#newbook" class="header__link">Новые книги</a></li>
+                <li><a href="./index.html#search" class="header__link">Поиск</a></li>
+                <li><a href="./index.html#review" class="header__link">Отзывы</a></li>
+                <li><a href="./index.html#contact" class="header__link">Контакты</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -52,9 +54,9 @@
             </div>
         </section>
 
-        <section class="auth df fc aic" id="auth"> <!-- + auth долго, auth как будто круче и быстрее-->
+        <section class="auth df fc aic" id="auth">
 
-            <h2 class="auth__title">Авторизация</h2> <!-- + Классик auth__title   -->
+            <h2 class="auth__title">Авторизация</h2>
 
             <form class="auth__form gap20 df fc aic" id="auth_form" action="#">
 
@@ -73,45 +75,45 @@
 
         <section class="about gap20 df aic fc" id="about">
             <h2 class="about__title">Book Haven</h2>
-            <div class="about__container df"> <!-- Очень длинный класс(первый) about__container, если бы срезал -section   -->
-                <div> <!-- базовый класс-->
-                    <p>BookHaven — это уникальная платформа для бесплатного чтения книг, где каждый найдет что-то по
+            <div class="about__container df">
+                <div class="about__text">
+                    <p class="about_paragraph">BookHaven — это уникальная платформа для бесплатного чтения книг, где каждый найдет что-то по
                         душе.
                         На
                         нашем сайте собрана обширная библиотека произведений различных жанров: от классической
                         литературы до
-                        современных бестселлеров, научно-популярных книг и детских сказок. Мы стремимся сделать чтение
+                        современных бестселлер  ов, научно-популярных книг и детских сказок. Мы стремимся сделать чтение
                         доступным
                         для всех, поэтому наш ресурс полностью бесплатный и не требует подписок или скрытых платежей.
                     </p>
-                    <p>На BookHaven вы сможете:</p>
-                    <ul>
-                        <li>Читать книги онлайн в удобном формате.</li>
-                        <li>Скачивать произведения для оффлайн-чтения.</li>
-                        <li>Открывать для себя новых авторов и делиться своими впечатлениями с другими читателями.</li>
-                        <li>Создавать персональные подборки и сохранять любимые книги.</li>
-                        <li>Наслаждаться чтением на любом устройстве: смартфоне, планшете, ноутбуке или компьютере. Наш
+                    <p class="about_paragraph">На BookHaven вы сможете:</p>
+                    <ul class="about_list">
+                        <li class="about__item">Читать книги онлайн в удобном формате.</li>
+                        <li class="about__item">Скачивать произведения для оффлайн-чтения.</li>
+                        <li class="about__item">Открывать для себя новых авторов и делиться своими впечатлениями с другими читателями.</li>
+                        <li class="about__item">Создавать персональные подборки и сохранять любимые книги.</li>
+                        <li class="about__item">Наслаждаться чтением на любом устройстве: смартфоне, планшете, ноутбуке или компьютере. Наш
                             сайт
                             адаптирован под все экраны, чтобы вы могли погрузиться в мир литературы где угодно и когда
                             угодно.
                         </li>
                     </ul>
-                    <p>
+                    <p class="about_paragraph">
                         BookHaven — это место, где каждая книга становится доступной, а чтение — удовольствием.
                         Присоединяйтесь
                         к нашему сообществу книголюбов и откройте для себя мир литературы без границ!
                     </p>
                 </div>
-                <img src="./assets/images/landingPage/aboutUs.png" alt=""> <!-- alt, и фото не то-->
+                <img class="about_photo" src="./assets/images/landingPage/aboutUs.png" alt=""> <!-- alt, и фото не то-->
             </div>
         </section>
 
-        <section class="features-demo df fc aic">
-            <div class="features-demo__container df fc aic">
-                <h2 class="demo__title">Посмотрите, как создаются наши любимые книги:</h2> <!-- класс-->
-                <video controls>
-                    <source src="./assets/video/howto.mp4" type="video/mp4"> <!-- класс-->
-                    Ваш браузер не поддерживает воспроизведение видео.
+        <section class="demo df fc aic">
+            <div class="demo__container df fc aic">
+                <h2 class="demo__title">Посмотрите, как создаются наши любимые книги:</h2>
+                <video controls class="features-demo__video">
+                    <source src="./assets/video/howto.mp4" type="video/mp4">
+                    <span class="demo__error">Ваш браузер не поддерживает воспроизведение видео.</span>
                 </video>
             </div>
         </section>
@@ -187,17 +189,17 @@
                         вам те или иные рекомендации и чего ожидать в дальнейшем.</p>
                     <button class="btn btn--medium">Читать</button>
                 </div>
-                <div class="new-books__watch-all df aic jcc"> <!-- new-books__watch-all  тоже страшно-->
+                <div class="new-books__watch-all df aic jcc">
                     <button class="btn btn--medium">Смотреть все</button>
                 </div>
             </div>
         </section>
 
-        <section class="search df fc jcc aic" id="search">
-            <h2 class="search__title">Поиск книги по названию или автору:</h2> <!-- + класс -->
+        <section class="search df fc jcc aic">
+            <h2 class="search__title">Поиск книги по названию или автору:</h2>
             <div class="search__container df jce aic">
                 <input type="search" id="book_search" class="input input--large" list="book-suggestions"
-                    placeholder="Название или автор..."> <!-- + type search -->
+                    placeholder="Название или автор...">
 
                 <button class="btn btn--medium">Поиск</button>
                 <datalist id="book-suggestions">
@@ -223,16 +225,16 @@
         </section>
 
         <section class="news-subscribe df jcc">
-            <div class="news-subscribe__container df fc jcc aic"> <!-- класс огромный -->
-                <h2 class="subscribe__title">Подписка на новости</h2> <!-- + класс -->
-                <form action="#" class="news-subscribe__form df fc aic"> <!-- огромные классы -->
-                    <label class="news-subscribe__label df jce"> <!-- огромные классы -->
+            <div class="news-subscribe__container df fc jcc aic">
+                <h2 class="subscribe__title">Подписка на новости</h2>
+                <form action="#" class="news-subscribe__form df fc aic">
+                    <label class="news-subscribe__label df jce">
                         E-mail:
                         <input class="input input--small" type="email" name="email" id="subscribe-email"
                             placeholder="Введите вашу почту...">
                     </label>
-                    <label class="news-subscribe__label"> <!-- огромные классы -->
-                        <input type="checkbox" name="confirm" class="news-subscribe__checkbox"> <!-- огромные классы -->
+                    <label class="news-subscribe__label">
+                        <input type="checkbox" name="confirm" class="news-subscribe__checkbox">
                         Я согласен на обработку персональных данных
                     </label>
                 </form>
